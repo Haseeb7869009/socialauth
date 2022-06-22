@@ -1,0 +1,68 @@
+<ion-header class="header_components">
+    <app-header [title]="'edit_personal_details'" type="1" hasBack="true"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="input_Wraper">
+
+            <div class="input_in_icon">
+                <ion-label >{{ 'name' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-input placeholder="{{ 'name' | translate }}" value="Randy Torff"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+            <div class="input_in_icon">
+                <ion-label >{{ 'user_ID' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-input placeholder="{{ 'user_ID' | translate }}" value="12345-67890"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+            <div class="input_in_icon">
+                <ion-label >{{ 'company' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-input placeholder="{{ 'company' | translate }}" value="LLL IT Solution"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+             <div class="input_in_icon">
+                <ion-label >{{ 'email' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-input placeholder="{{ 'email' | translate }}" value="Demo@gmail.com"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+             <div class="input_in_icon">
+                <ion-label >{{ 'user_type' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-select placeholder="Platinum">
+						<ion-select-option value="f">Platinum</ion-select-option>
+						<ion-select-option value="m">Gold</ion-select-option>
+					</ion-select>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+             <div class="input_in_icon">
+                <ion-label >{{ 'current_password' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-input placeholder="{{ 'current_password' | translate }}" value="Ingresa Contraseña Actual"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+            <div class="input_in_icon">
+                <ion-label >{{ 'password' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-input  type="password" placeholder="{{ 'password' | translate }}" value="LLL IT Solution"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+            <div class="input_in_icon">
+                <ion-label >{{ 'language' | translate }}</ion-label>
+                <div class="input_stacked">
+                    <ion-select placeholder="English">
+						<ion-select-option value="f">English</ion-select-option>
+						<ion-select-option value="m">Spanish</ion-select-option>
+					</ion-select>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+        </div><!--input_Wraper-->
+        <div class="submit_bottom">
+            <ion-button color="primary"  (click)="myaccount()">{{ 'save' | translate }}</ion-button>
+        </div><!--submit_bottom-->
+    </div><!--pages_wraper-->
+</ion-content>

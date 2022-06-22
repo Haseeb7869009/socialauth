@@ -1,0 +1,77 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="simple_title">
+            <h3>{{ 'please_confirm_package_information' | translate }}</h3>
+        </div>
+
+        <h3 class="title_edit cap" >{{ 'track_no' | translate }}. <span (click)="edit()"><ion-icon name="pencil"></ion-icon> {{ 'edit' | translate }}</span></h3>
+        <div class="input_wraper">
+            <div class="input_with_icon">
+                <div class="input_stacked gray">
+                    <ion-img src="assets/images/icons/curior.png"></ion-img>
+                    <ion-input placeholder="e.g. 01-12345-67890 " value="+01-12345-67890" ></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+        </div><!--input_wraper-->
+        <h3 class="title_edit cap" >{{ 'contact_info' | translate }}. <span (click)="edit()"><ion-icon name="pencil"></ion-icon> {{ 'edit' | translate }}</span></h3>
+        <div class="input_wraper">
+            <div class="input_with_icon">
+                <div class="input_stacked gray">
+                    <ion-icon name="call" ></ion-icon>
+                    <ion-input placeholder="e.g. 01-12345-67890 " value="+01-12345-67890" ></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+            <div class="input_with_icon">
+                <div class="input_stacked gray">
+                    <ion-icon name="mail" ></ion-icon>
+                    <ion-input placeholder="e.g. demo@gmail.com" value="demo@gmail.com"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon-->
+        </div><!--input_wraper-->
+        <h3 class="title_edit cap" >{{ 'selected_locker' | translate }} <span (click)="edit()"><ion-icon name="pencil"></ion-icon> {{ 'edit' | translate }}</span></h3>
+        <div class="result">
+            <div class="result_in">
+                <div class="left">
+                    <div class="left_in">
+                        <ion-img  src="assets/images/icons/locker.png" alt="locker"></ion-img> 
+                    </div><!--left_in-->
+                </div><!--left-->
+                <div class="middle">
+                    <h5>OXXOPOST | Palacio de Hierro</h5>
+                    <p>Ave. Jose Vasconcelos 402, 66220 San Pedro Garza Garcia, N.L.</p>
+                    <p><span>100 mts de distancia</span></p>
+                </div><!--middle-->
+                <div class="right"></div><!--right-->
+            </div><!--result_in-->
+        </div><!--result-->
+        <h3 class="title_simple cap">{{ 'compartment' | translate }}</h3>
+        <div class="availible">
+            <div class="availible_in active">
+                <h2>S</h2>
+                <p>4 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+            <div class="availible_in">
+                <h2>M</h2>
+                <p>1 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+            <div class="availible_in">
+                <h2>L</h2>
+                <p>2 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+            <div class="availible_in disable">
+                <h2>XL</h2>
+                <p>0 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+        </div><!--availible-->
+        <div class="button_part_bottom">
+            <ion-button  class="WhiteBlackBtn"  (click)="complete()">
+                <span>{{ 'submit' | translate }}</span>
+                <ion-img src="assets/images/icons/front.png"  alt="next"></ion-img>
+            </ion-button>
+        </div><!--button_part-->
+    </div><!--pages_wraper-->
+</ion-content>

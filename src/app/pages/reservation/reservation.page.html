@@ -1,0 +1,29 @@
+<ion-header class="header_components">
+    <app-header [title]="'reserve_package'" type="3" ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="simple_title">
+           <h3>{{ 'scan_package_label_to_obtain_tracking' | translate }}</h3>
+        </div><!--simple_title-->
+        <div class="maps">
+            <ion-img  src="assets/images/icons/barcode.png" alt="Scan barcode"></ion-img> 
+        </div>
+        <p class="medium_title">{{ 'enter_package_information_manually' | translate }}</p>
+        <div class="search_bar">
+            <div class="input_in_icon">
+                <div class="input_stacked double_icon">
+                    <ion-icon name="search" ></ion-icon>
+                    <ion-input placeholder="ejemplo: 123456789012345"></ion-input>
+                </div><!--input_stacked-->
+            </div><!--input_in_icon--> 
+        </div><!--search_bar-->
+        <div class="button_part_bottom">
+            <ion-button  class="WhiteBlackBtn"  (click)="detail()">
+                <span>{{ 'submit' | translate }}</span>
+                <ion-img src="assets/images/icons/front.png" alt="next"></ion-img>
+            </ion-button>
+        </div><!--button_part-->
+    </div><!--pages_wraper-->
+</ion-content>

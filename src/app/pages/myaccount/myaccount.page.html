@@ -1,0 +1,25 @@
+<ion-header class="header_components">
+    <app-header [title]="'my_account'" type="0" hasBack="true"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="profile_top">
+            <div class="profile_bar">
+                <ion-img src="assets/images/icons/profilebar.png" alt="Profile QR Code"></ion-img> 
+            </div><!--profile_bar-->
+            <h2>{{ 'qr_code_to_access_locker' | translate }}</h2>
+            <ion-button >{{ 'change' | translate }} ?</ion-button>
+        </div><!--profile_top-->
+        <div class="profile_part captialize">
+            <h3>{{ 'personal_details' | translate }} <span (click)="edit()"><ion-icon name="pencil"></ion-icon> {{ 'edit' | translate }}</span></h3>
+            <p>{{ 'name' | translate }} <span>Randy Torff</span></p>
+            <p>{{ 'user_ID' | translate }} <span>12-3456-7890</span></p>
+            <p>{{ 'company' | translate }} <span>LLL IT Solution</span></p>
+            <p>{{ 'email' | translate }} <span>Demo@gmail.com</span></p>
+            <p>{{ 'user_Type' | translate }} <span>Platinum</span></p>
+            <p>{{ 'password' | translate }} <span>mlsj@csv8*90</span></p>
+            <p>{{ 'language' | translate }} <span>Español (ES)</span></p>
+        </div><!--profile_part-->
+    </div><!--pages_wraper-->
+</ion-content>

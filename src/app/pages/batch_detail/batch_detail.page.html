@@ -1,0 +1,35 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="locker_top">
+            <div class="overflow">
+                <div class="left">
+                    <h4 class="title_inline_yellow">{{ 'locker_id' | translate }} : <span>1234567890</span></h4>
+                    <h5>OXXO Monterrey  </h5>
+                </div><!--left-->
+                <div class="right">
+                    <div class="online">
+                        <ion-icon name="ellipse-outline"></ion-icon> {{ 'online' | translate }}
+                    </div><!--online-->
+                </div><!--right-->
+            </div><!--overflow-->
+            <p>2, Calle Washington 1400 Centro, Monterrey, Nuevo Leon - 64000.</p>
+        </div><!--locker_top-->
+    </div><!--pages_wraper-->
+    <div class="maps">
+        <ion-img  src="assets/images/batch_map.png" alt="Map" ></ion-img> 
+    </div>
+    <div class="batch_footer cap">
+        <h4> {{ 'confirmation' | translate }} # <span>VIVI12356</span></h4>
+        <h4>{{ 'selected_locker_size' | translate }} # <span>M</span></h4>
+        <div class="inline_buttons ">
+            <ion-button class="simpleprimary"   (click)="confirm()">{{ 'deliver_package' | translate }}</ion-button>
+            <ion-button  class="simpleBorderBtn "  (click)="confirm()">{{ 'exit' | translate }}</ion-button>
+        </div>
+    </div><!--batch_footer-->
+
+</ion-content>
+ 

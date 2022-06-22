@@ -1,0 +1,28 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="reservation_top">
+            <div class="confirmation_img">
+                <ion-img src="assets/images/bye.png" alt="bye" ></ion-img> 
+            </div><!--confirmation_img-->
+            <h3>{{ 'reservation_is_confirmed' | translate }}! </h3>
+            <p>{{ 'reservation_valid_for_8_hours' | translate }}.  </p>
+            <p class="cap">{{ 'package_id' | translate }} : <span>123456789012345</span> </p>
+        </div><!--reservation_top-->
+        <div class="reservation_barcode">
+            <div class="barcode_img">
+                <ion-img src="assets/images/QR _Code.png" alt="bye" ></ion-img> 
+            </div><!--barcode_img-->
+            <ion-button  (click)="reservation()">{{ 'download_qr_code' | translate }}</ion-button>
+            <p>{{ 'or_use_below_dropoff_code' | translate }}</p>
+            <div class="number_code">
+                <span>123-456</span>
+            </div><!--number_code-->
+        </div><!--reservation_barcode-->
+        <ion-button  class="simpleprimary full"  (click)="reservation()">{{ 'go_to_locker' | translate }}</ion-button>
+        <ion-button  class="simpleBorderBtn full"  (click)="reservation()">{{ 'deliver_another_package' | translate }}</ion-button>
+    </div><!--pages_wraper-->
+</ion-content>

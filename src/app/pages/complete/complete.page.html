@@ -1,0 +1,18 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="complete_top">
+            <ion-img src="assets/images/bye.png" alt="bye" ></ion-img> 
+            <h3> {{ 'package_has_been_successfully_delivered' | translate }}?</h3> 
+            <div class="number_code gray"> 
+                <span>000-000</span>
+            </div><!--number_code-->
+            <p>{{ 'resend_code' | translate }}</p>
+        </div><!--complete_top-->
+        <ion-button  class="simpleprimary full"  (click)="complete()">{{ 'go_to_next_order' | translate }}</ion-button>
+        <ion-button  class="simpleBorderBtn success full cap"  (click)="complete()">{{ 'finalize' | translate }}</ion-button>
+    </div><!--pages_wraper-->
+</ion-content>

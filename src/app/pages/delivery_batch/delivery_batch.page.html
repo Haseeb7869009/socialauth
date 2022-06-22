@@ -1,0 +1,83 @@
+<ion-header class="header_components">
+    <app-header [title]="'delivery_batch'" type="0"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div  class="batch_top">
+            <div class="batch_in">
+                <div class="count">
+                    20
+                </div>
+                <p>{{ 'pending' | translate }}</p>
+                <p>{{ 'deliveries' | translate }}</p>
+            </div><!--batch_in-->
+            <div class="batch_in">
+                <div class="count">
+                    05
+                </div>
+                <p>{{ 'pending' | translate }}</p>
+                <p>{{ 'pickups' | translate }}</p>
+            </div><!--batch_in-->
+        </div><!--batch_top-->
+        <div class="simple_title_typ2">
+            <h3> {{ 'list_of_orders' | translate }}</h3>
+        </div>
+        <div class="tracking_orders">
+            <div class="tracking_in" (click)="confirm()">
+                <div class="left">
+                    <h3>{{ 'tracking_id' | translate }} : <span>123456789012</span></h3>
+                    <p>1.1 {{ 'miles_away' | translate }}</p>
+                </div>
+                <div class="right">
+                    <span>{{ 'approved' | translate }} </span>
+                </div>
+            </div><!--tracking_in--->
+            <div class="tracking_in" (click)="confirm()">
+                <div class="left">
+                    <h3>{{ 'tracking_id' | translate }} : <span>123456789012</span></h3>
+                    <p>1.1 Miles Away</p>
+                </div>
+                <div class="right danger">
+                    <span>{{ 'unapproved' | translate }}</span>
+                </div>
+            </div><!--tracking_in--->
+            <div class="tracking_in" (click)="confirm()">
+                <div class="left">
+                    <h3>{{ 'tracking_id' | translate }} : <span>123456789012</span></h3>
+                    <p>1.1 {{ 'miles_away' | translate }}</p>
+                </div>
+                <div class="right">
+                    <span>{{ 'approved' | translate }}</span>
+                </div>
+            </div><!--tracking_in--->
+            <div class="tracking_in" (click)="confirm()">
+                <div class="left">
+                    <h3>{{ 'tracking_id' | translate }} : <span>123456789012</span></h3>
+                    <p>1.1 {{ 'miles_away' | translate }}</p>
+                </div>
+                <div class="right">
+                    <span>{{ 'tracking_id' | translate }}</span>
+                </div>
+            </div><!--tracking_in--->
+            <div class="tracking_in" (click)="confirm()">
+                <div class="left">
+                    <h3>{{ 'tracking_id' | translate }} : <span>123456789012</span></h3>
+                    <p>1.1 {{ 'miles_away' | translate }}</p>
+                </div>
+                <div class="right danger">
+                    <span>{{ 'unapproved' | translate }}</span>
+                </div>
+            </div><!--tracking_in--->
+            <div class="tracking_in" (click)="confirm()">
+                <div class="left">
+                    <h3>{{ 'tracking_id' | translate }} : <span>123456789012</span></h3>
+                    <p>1.1 {{ 'miles_away' | translate }}</p>
+                </div>
+                <div class="right">
+                    <span>{{ 'approved' | translate }}</span>
+                </div>
+            </div><!--tracking_in--->
+        </div><!--tracking_orders-->
+    </div><!--pages_wraper-->
+</ion-content>

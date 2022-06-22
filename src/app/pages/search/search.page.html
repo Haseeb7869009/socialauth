@@ -1,0 +1,79 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="search_bar">
+            <div class="input_in_icon">
+                <div class="input_stacked double_icon">
+                    <ion-icon name="search" ></ion-icon>
+                    <ion-input placeholder="{{ 'search_here' | translate }}"></ion-input>
+                    <ion-img (click)="presentActionSheet()" class="lastone" src="assets/images/icons/filter.png"></ion-img> 
+                </div><!--input_stacked-->
+            </div><!--input_in_icon--> 
+        </div><!--search_bar-->
+        <div class="maps">
+            <ion-img  src="assets/images/icons/map.png" alt="map"></ion-img> 
+        </div>
+        <div class="simple_title_typ2">
+            <h3>{{ 'location_of_nearby_lockers' | translate }}</h3>
+            <p>{{ 'selecciona_un_locker' | translate }}</p>
+        </div><!--simple_title-->
+        <ion-radio-group value="biff">
+        <div class="result">
+            <div class="result_in active">
+                <div class="left">
+                    <div class="left_in">
+                        <ion-img  src="assets/images/icons/locker.png" alt="locker"></ion-img> 
+                    </div><!--left_in-->
+                </div><!--left-->
+                <div class="middle">
+                    <h5>OXXOPOST | Palacio de Hierro</h5>
+                    <p>Ave. Jose Vasconcelos 402, 66220 San Pedro Garza Garcia, N.L.</p>
+                    <p><span>100 mts de distancia</span></p>
+                </div><!--middle-->
+                <div class="right">
+                    <ion-radio mode="md"  value="1"></ion-radio>
+                </div><!--right-->
+            </div><!--result_in-->
+            <div class="result_in">
+                <div class="left">
+                    <div class="left_in">
+                        <ion-img  src="assets/images/icons/locker.png" alt="locker"></ion-img> 
+                    </div><!--left_in-->
+                </div><!--left-->
+                <div class="middle">
+                    <h5>OXXOPOST | Palacio de Hierro</h5>
+                    <p>Ave. Jose Vasconcelos 402, 66220 San Pedro Garza Garcia, N.L.</p>
+                    <p><span>100 mts de distancia</span></p>
+                </div><!--middle-->
+                <div class="right">
+                    <ion-radio mode="md"  value="2"></ion-radio>
+                </div><!--right-->
+            </div><!--result_in-->
+            <div class="result_in">
+                <div class="left">
+                    <div class="left_in">
+                        <ion-img  src="assets/images/icons/locker.png"  alt="locker"></ion-img> 
+                    </div><!--left_in-->
+                </div><!--left-->
+                <div class="middle">
+                    <h5>OXXOPOST | Palacio de Hierro</h5>
+                    <p>Ave. Jose Vasconcelos 402, 66220 San Pedro Garza Garcia, N.L.</p>
+                    <p><span>100 mts de distancia</span></p>
+                </div><!--middle-->
+                <div class="right">
+                    <ion-radio mode="md"  value="3"></ion-radio>
+                </div><!--right-->
+            </div><!--result_in-->
+        </div><!--result-->
+         </ion-radio-group>
+        <div class="button_part_bottom">
+            <ion-button  class="WhiteBlackBtn"  (click)="detail()">
+                <span>{{ 'submit' | translate }}</span>
+                <ion-img src="assets/images/icons/front.png"  alt="next"></ion-img>
+            </ion-button>
+        </div><!--button_part-->
+    </div><!--pages_wraper-->
+</ion-content>

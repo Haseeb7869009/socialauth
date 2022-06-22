@@ -1,0 +1,47 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1" hasBack="true"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="locker_top">
+            <div class="left">
+                <h4 class="title_inline_yellow">{{ 'locker_id' | translate }} : <span>1234567890</span></h4>
+                <h5>OXXO Palacio de Hierro </h5>
+                <p>Ave. Jose Vasconcelos 402, 66220 <br/>San Pedro Garza Garcia, N.L.</p>
+            </div><!--left-->
+            <div class="right">
+                <div class="online">
+                    <ion-icon name="ellipse-outline"></ion-icon> {{ 'online' | translate }}
+                </div><!--online-->
+            </div><!--right-->
+        </div><!--locker_top-->
+        <div class="maps">
+            <ion-img  src="assets/images/icons/map2.png" alt="Map" ></ion-img> 
+        </div>
+        <div class="simple_title_typ2 captialize">
+            <h3>{{ 'available_locker' | translate }}</h3>
+        </div><!--simple_title-->
+        <div class="availible">
+            <div class="availible_in">
+                <h2>S</h2>
+                <p>4 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+            <div class="availible_in">
+                <h2>M</h2>
+                <p>1 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+            <div class="availible_in">
+                <h2>L</h2>
+                <p>2 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+            <div class="availible_in disable">
+                <h2>XL</h2>
+                <p>0 {{ 'available' | translate }}</p>
+            </div><!--availible_in-->
+        </div><!--availible-->
+        <ion-button  class="simpleprimary full"  (click)="reservation()">{{ 'reserve_a_locker' | translate }}</ion-button>
+        <ion-button  class="simpleBorderBtn full"  (click)="reservation()">{{ 'go_to_locker' | translate }}</ion-button>
+
+    </div><!--pages_wraper-->
+</ion-content>

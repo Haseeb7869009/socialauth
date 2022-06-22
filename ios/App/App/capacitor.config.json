@@ -1,0 +1,6 @@
+{
+	"appId": "com.oxxopost.app",
+	"appName": "Oxxo Post",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,46 @@
+<ion-header class="header_components">
+    <app-header [title]="'home'" type="0"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="home_top">
+            <div class="home_t_left" (click)="profile()">
+                <ion-img src="assets/images/paco.png" alt="Paco Logo"></ion-img>
+            </div><!--home_t_left-->
+            <div class="home_t_right ">
+                <h2>{{ 'hey' | translate }}, Paco!   <ion-img src="assets/images/hand.png" alt="hey" ></ion-img> </h2>
+                <p>{{ 'DASHBOARD.what_would_you_like_to_do?' | translate }}</p>
+            </div><!--home_t_right-->
+        </div><!--home_top-->
+        <div class="home_options">
+            <div class="simple_title"> 
+                <h3>{{ 'lockers_options' | translate }}</h3>
+            </div><!--simple_title-->
+            <div class="lockers" (click)="search()">
+                <div class="lockers_in">
+                    <div class="icon_in">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </div><!--icon_in-->
+                    <h2>{{ 'search_nearby_lockers' | translate }}</h2>
+                </div><!--lockers_in-->
+                <div class="lockers_in">
+                    <div class="icon_in">
+                        <ion-icon name="albums-outline"></ion-icon>
+                    </div><!--icon_in-->
+                    <h2>{{ 'reserve_a_locker' | translate }}</h2>
+                </div><!--lockers_in-->
+            </div><!--lockers-->
+            <div class="bottom_home">
+                <div class="icon_in">
+                    <ion-img src="assets/images/icons/marker.png" alt="Map Pins"></ion-img> 
+                </div><!--icon_in-->
+                <div class="midle_text">
+                    <h3>{{ 'go_to_my_routes' | translate }}</h3>
+                    <p>{{ 'check_your_route' | translate }}</p>
+                </div>
+                <ion-button >{{ 'go_now' | translate }}</ion-button>
+            </div><!--bottom_one-->
+        </div><!--home_options-->
+    </div><!--pages_wraper-->
+</ion-content>

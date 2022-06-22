@@ -1,0 +1,71 @@
+<ion-content>
+    <div class="simple_Wraper">
+        <ion-slides class="boarding_slide" pager="true" [options]="slideOpts">
+            <ion-slide>
+                <div class="top_image">
+                    <ion-img src="assets/images/boarding/Image.png" alt="slide icon" ></ion-img>
+                </div><!--top_image-->
+                <div class="bottom_part ">
+                    <h2>{{ 'HOME.slide1.title' | translate }}</h2>
+                    <p>
+                        {{ 'HOME.slide1.description' | translate }}
+                    </p>
+                    <div class="button_part_bottom white">
+                        <ion-button  class="WhiteBlackBtn"  (click)="login()">
+                            <span>{{ 'get_started' | translate }}</span>
+                            <ion-img src="assets/images/icons/Vector.png" alt="next"></ion-img>
+                        </ion-button>
+                    </div><!--button_part_bottom-->
+                </div><!--bottom_part-->
+            </ion-slide>
+            <ion-slide>
+                <div class="top_image">
+                    <ion-img src="assets/images/boarding/slide3.png"  alt="slide icon"></ion-img>
+                </div><!--top_image-->
+                <div class="bottom_part">
+                    <p>
+                        {{ 'HOME.slide2.description' | translate }}
+                    </p>
+                    <div class="button_part_bottom white">
+                        <ion-button  class="WhiteBlackBtn"  (click)="login()">
+                            <span>{{ 'get_started' | translate }}</span>
+                            <ion-img src="assets/images/icons/Vector.png" alt="next"></ion-img>
+                        </ion-button>
+                    </div><!--button_part_bottom-->
+                </div><!--bottom_part-->
+            </ion-slide>
+            <ion-slide>
+                <div class="top_image">
+                    <ion-img src="assets/images/boarding/slide4.png"  alt="slide icon"></ion-img>
+                </div><!--top_image-->
+                <div class="bottom_part">
+                    <p>
+                        {{ 'HOME.slide3.description' | translate }}
+                    </p>
+                    <div class="button_part_bottom white">
+                        <ion-button  class="WhiteBlackBtn"  (click)="login()">
+                            <span>{{ 'get_started' | translate }}</span>
+                            <ion-img src="assets/images/icons/Vector.png" alt="next"></ion-img>
+                        </ion-button>
+                    </div><!--button_part_bottom-->
+                </div><!--bottom_part-->
+            </ion-slide>
+            <ion-slide>
+                <div class="top_image">
+                    <ion-img src="assets/images/boarding/slide5.png"  alt="slide icon"></ion-img>
+                </div><!--top_image-->
+                <div class="bottom_part">
+                    <p>
+                        {{ 'HOME.slide4.description' | translate }}
+                    </p>
+                    <div class="button_part_bottom white">
+                        <ion-button  class="WhiteBlackBtn"  (click)="login()">
+                            <span>{{ 'get_started' | translate }}</span>
+                            <ion-img src="assets/images/icons/Vector.png"  alt="next"></ion-img>
+                        </ion-button>
+                    </div><!--button_part_bottom-->
+                </div><!--bottom_part-->
+            </ion-slide>
+        </ion-slides>
+    </div><!--simple_Wraper-->
+</ion-content>

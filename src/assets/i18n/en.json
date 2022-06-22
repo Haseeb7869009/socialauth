@@ -1,0 +1,145 @@
+{
+	"get_started": "Get Started",
+	"email": "Email",
+	"password": "Password",
+	"forgot_password": "Forgot Password",
+	"sign_up": "Sign up",
+	"login": "Login",
+
+	"enter_email": "Enter Email",
+	"enter_password": "Enter Password",
+
+	"home": "Home",
+	"hey": "Hey",
+	"lockers_options": "Lockers Options",
+	"search_nearby_lockers": "Search Nearby Lockers",
+	"reserve_a_locker": "Reserve a  Locker",
+	"go_to_my_routes": "Go to My Routes",
+	"check_your_route": "Check your route",
+	"go_now": "Go Now",
+
+
+	"my_account":"my account",
+	"qr_code_to_access_locker":"QR Code to access locker",
+	"change":"Change",
+
+	"personal_details":"Personal Details",
+	"name":"Name",
+	"user_ID":"User ID",
+	"company":"Company",
+	"user_type":"User Type",
+	"language":"Language",
+	"edit":"Edit",
+	"edit_personal_details":"Edit Personal Details",
+	"current_password":"Current Password",
+	"save":"Save",
+
+	"go_back":"go back",
+	"search_here":"Search here....",
+	"location_of_nearby_lockers":"Location of nearby lockers",
+	"selecciona_un_locker":"selecciona un locker",
+	"submit":"Submit",
+	"reserve_package":"Reserve Package",
+	"scan_package_label_to_obtain_tracking":"Scan Package Label to Obtain Tracking",
+	"enter_package_information_manually":"Enter package information manually",
+	"search":"search",
+
+	"locker_id":"Locker ID",
+	"package_id":"package ID",
+	"online":"online",
+	"available":"available",
+	"available_locker":"available locker",
+	"reserve_a_locker":"Reserve a Locker",
+	"go_to_locker":"Go to Locker",
+	"filter_by":"filter by",
+	"locker":"locker",
+	"address":"address",
+	"city":"city",
+
+	"carrier":"carrier",
+	"amazon":"amazon",
+	"recipient_contact_info":"Recipient Contact Info",
+	"choose_locker":"Choose Locker",
+	"selected_locker":"selected locker",
+	"select_a_compartment":"Select a Compartment",
+	"please_confirm_package_information":"Please confirm Package information",
+
+	"track_no":"track no",
+	"contact_info":"contact info",
+	"compartment":"compartment",
+
+	"reservation_valid_for_8_hours":"Reservation valid for 8 hours",
+	"reservation_is_confirmed":"Reservation is Confirmed",
+	"deliver_another_package":"Deliver another package",
+	"download_qr_code":"Download QR Code",
+
+	"delivery_batch":"Delivery Batch",
+	"pending":"Pending",
+	"pickups":"Pickups",
+	"deliveries":"Deliveries",
+
+	"tracking_id":"Tracking ID",
+	"list_of_orders":"List of orders",
+	"miles_away":"miles away",
+	"approved":"approved",
+	"unapproved":"unapproved",
+	"deliver_package":"deliver package",
+	"exist":"exist",
+	"confirmation":"Confirmation",
+	"selected_locker_size":"Selected Locker Size",
+	"cancel_reservation":"Cancel Reservation",
+	"created_date":"Created Date",
+	"reservation_is_confirmed":"Reservation is Confirmed",
+	"package_has_been_successfully_delivered":"Package has been Successfully Delivered",
+	"go_to_next_order":"Go to next order",
+	"finalize":"Finalize",
+	"resend_code":"Resend Code",
+	"or_use_below_dropoff_code":"Or use below dropoff code",
+
+	"my_deliveries":"My Deliveries",
+	"this_month":"This month",
+	"cancelled":"Cancelled",
+	"returned":"Returned",
+	"time":"Time",
+	"status":"Status",
+	"recent_transactions":"Recent Transactions",
+	"package_status":"Package Status",
+	"confirmation_no":"Confirmation No",
+	"locker_address":"Locker Address",
+	"created":"Created",
+	"in_route":"In Route",
+	"delivered":"Delivered",
+	"returned":"Returned",
+	"expired":"Expired",
+	"collected":"Collected",
+	"recipient_info":"Recipient Info",
+	"signed_by":"Signed by",
+
+
+
+	"HOME": {
+        "slide1": {
+        	"title": "Last Mile Deliveries Made Easy!",
+        	"description": "Make a reservation to the nearest locker by entering package recipient information. "
+        },
+        "slide2": {
+        	"title": "",
+        	"description": "After reservation is confirmed, go to the correct locker. We will guide you there! "
+        },
+        "slide3": {
+        	"title": "",
+        	"description": "Deliver a package by scanning your QR Access Code (located in My Account) and the reservation QR Code. "
+        },
+        "slide4": {
+        	"title": "",
+        	"description": "The locker will open for delivery. Please make sure you close the locker when you are done! "
+        }
+    },
+    "LOGIN": {
+    	"dnt_have": "Dont have an account ?",
+    	"welcome": "Welcome back! Please enter your details."
+    },
+    "DASHBOARD": {
+    	"what_would_you_like_to_do?": "What would you like to do?"
+    }
+}

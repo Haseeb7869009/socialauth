@@ -1,0 +1,25 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+
+        <div class="confirmed_top cap">
+            <h4 class="title_inline_yellow">{{ 'locker_id' | translate }} : <span>1234567890</span></h4>
+            <p>{{ 'created_date' | translate }} :  10/04/2022</p>
+        </div><!--confirmed_top-->
+        <div class="confirmed_qrCode">
+            <div class="barcode_img">
+                <ion-img src="assets/images/QR _Code.png" alt="QR code" ></ion-img> 
+            </div><!--barcode_img-->
+            <div class="number_code">
+                <span>123-456</span>
+            </div><!--number_code-->
+            <h3> {{ 'reservation_is_confirmed' | translate }}! </h3>
+            <p>{{ 'reservation_valid_for_8_hours' | translate }}.</p>
+        </div><!--confirmed_qrCode-->
+        <ion-button  class="simpleprimary full"  (click)="complete()">{{ 'go_to_locker' | translate }}</ion-button>
+        <ion-button  class="simpleBorderBtn danger full cap"  (click)="complete()">{{ 'cancel_reservation' | translate }}</ion-button>
+    </div><!--pages_wraper-->
+</ion-content>

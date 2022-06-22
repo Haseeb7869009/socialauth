@@ -1,0 +1,64 @@
+<ion-header class="header_components">
+    <app-header [title]="'go_back'" type="1"  ></app-header>
+</ion-header>
+
+<ion-content>
+    <div class="pages_wraper">
+        <div class="locker_top">
+            <div class="overflow">
+                <div class="left">
+                    <h4 class="title_inline_yellow"> {{ 'package_status' | translate }}</h4>
+                </div><!--left-->
+                <div class="right">
+                    <div class="online">
+                        <ion-icon name="ellipse-outline"></ion-icon> {{ 'online' | translate }}
+                    </div><!--online-->
+                </div><!--right-->
+            </div><!--overflow-->
+        </div><!--locker_top-->
+        <div class="profile_part">
+            <p>{{ 'tracking_id' | translate }} <span>1234567890123455</span></p>
+            <p>{{ 'confirmation_no' | translate }}. <span>1234567</span></p>
+            <p>{{ 'locker_id' | translate }} <span>1234567</span></p>
+            <p>{{ 'locker_address' | translate }} <span>24, Lane Street, CA</span></p>
+        </div><!--profile_part-->
+        <h3 class="title_simple">Tracking Details</h3>
+        <div class="tracking_steps">
+            <div class="tracking_steps_in">
+                <div class="top_bullet">
+                    <span class="bullets"></span>
+                    <span class="bullet_content">{{ 'created' | translate }}</span>
+                    <span class="bullet_data">Tuseday, 9:00PM</span>
+                </div><!--top_bullet-->
+                <div class="steps_info">
+                    <span>{{ 'in_route' | translate }}</span>
+                </div><!--steps_info-->
+            </div><!--tracking_steps_in-->
+            <div class="tracking_steps_in">
+                <div class="top_bullet">
+                    <span class="bullets"></span>
+                    <span class="bullet_content">{{ 'delivered' | translate }}</span>
+                    <span class="bullet_data">Wednesday, 9:00PM</span>
+                </div><!--top_bullet-->
+                <div class="steps_info">
+                    <span>{{ 'expired' | translate }}, {{ 'returned' | translate }}</span>
+                </div><!--steps_info-->
+            </div><!--tracking_steps_in-->
+            <div class="tracking_steps_in">
+                <div class="top_bullet">
+                    <span class="bullets"></span>
+                    <span class="bullet_content">{{ 'collected' | translate }}</span>
+                    <span class="bullet_data">Thursday, 9:00PM</span>
+                </div><!--top_bullet-->
+                <div class="recipt_info">
+                    <p>{{ 'recipient_info' | translate }}<span>Randy Torff</span></p>
+                </div><!--recipt_info-->
+                <div class="signature">
+                    <p>{{ 'signed_by' | translate }}</p>
+                    <ion-img src="assets/images/signature.png" alt="signature" ></ion-img> 
+                </div><!--signature-->
+            </div><!--tracking_steps_in-->
+        </div><!--tracking_steps-->
+    </div><!--pages_wraper-->
+</ion-content>
+

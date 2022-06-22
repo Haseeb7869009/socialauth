@@ -1,0 +1,45 @@
+<ion-content>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+        <div class="pages_wraper ios_pad">
+            <div class="top_title">
+                <h1>{{ 'login' | translate }}</h1>
+                <p>{{ 'LOGIN.welcome' | translate }}</p>
+            </div><!--top_title-->
+            <div class="logo">
+                <ion-img src="assets/images/logo_login.png" alt="oxxo post"></ion-img>
+                {{ loginForm.status }}
+            </div>
+
+            <div class="input_Wraper">
+                <div class="input_in_icon">
+                    <ion-label >{{ 'email' | translate }}</ion-label>
+                    <div class="input_stacked">
+                        <ion-icon name="person" ></ion-icon>
+                        <ion-input formControlName="email"  type="text"  placeholder="{{ 'enter_email' | translate }}" autocomplete="off"></ion-input>
+                    </div><!--input_stacked-->
+                    <div class="form_alert" *ngIf="email.invalid && (email.dirty || email.touched)">
+                        <p>Enter Valid Email</p>
+                    </div>
+                </div><!--input_in_icon-->
+                <div class="input_in_icon">
+                    <ion-label >{{ 'password' | translate }}</ion-label>
+                    <div class="input_stacked double_icon">
+                        <ion-icon name="lock-closed" ></ion-icon>
+                        <ion-input type="{{passwordtype}}"   formControlName="password" placeholder="{{ 'enter_password' | translate }}"></ion-input>
+                        <ion-icon *ngIf="passwordtype == 'password'" class="lastone" (click)="showpass()" name="eye-off-outline"></ion-icon>
+                        <ion-icon *ngIf="passwordtype == 'text'" class="lastone" (click)="showpass()" name="eye-outline"></ion-icon>
+                    </div><!--input_stacked-->
+                    <div class="form_alert" *ngIf="password.invalid && (password.dirty || password.touched)">
+                        <p>Password is Required</p>
+                    </div>
+                </div><!--input_in_icon-->  
+                
+                <p class="forget">{{ 'forgot_password' | translate }}?</p>
+            </div><!--input_Wraper-->
+        </div><!--pages_wraper-->
+        <div class="submit_bottom">
+            <ion-button   color="primary" type="submit" >{{ 'login' | translate }} <ion-spinner *ngIf="spiner"  class="spiner"></ion-spinner></ion-button>
+            <p>{{ 'LOGIN.dnt_have' | translate }} <span>{{ 'sign_up' | translate }}</span></p>
+        </div><!--submit_bottom-->
+    </form>
+</ion-content>

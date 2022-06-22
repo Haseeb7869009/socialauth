@@ -1,0 +1,7 @@
+{
+  "name": "oxxopost",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
